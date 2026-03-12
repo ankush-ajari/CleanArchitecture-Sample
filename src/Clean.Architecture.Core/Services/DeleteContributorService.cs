@@ -29,6 +29,6 @@ public class DeleteContributorService(IRepository<Contributor> _repository,
   }
   public int AddNumbers(int a, int b)
   {
-      return a + b
+      return a + b,
   }
 }
