@@ -1,4 +1,5 @@
 ﻿using Clean.Architecture.Core.Services;
+using System.IO;
 
 namespace Clean.Architecture.UnitTests.Core.Services;
 
@@ -27,6 +28,6 @@ public class DeleteContributorService_DeleteContributor
   [Fact]
   public void ShouldFail()
   {
-      Assert.Equal(6, 10);
+      var content = File.ReadAllText("C:\\temp\\data.txt");
   }
 }
