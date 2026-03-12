@@ -27,6 +27,6 @@ public class DeleteContributorService_DeleteContributor
   [Fact]
   public void ShouldFail()
   {
-      Assert.Equal(5, 10);
+      Assert.Equal(6, 10);
   }
 }
