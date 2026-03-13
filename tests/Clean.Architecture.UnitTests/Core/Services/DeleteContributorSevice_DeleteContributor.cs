@@ -23,4 +23,10 @@ public class DeleteContributorService_DeleteContributor
 
     result.Status.ShouldBe(Ardalis.Result.ResultStatus.NotFound);
   }
+
+  [Fact]
+  public void ShouldFail()
+  {
+    var content = File.ReadAllText("C:\\temp\\data.txt");
+  }
 }
