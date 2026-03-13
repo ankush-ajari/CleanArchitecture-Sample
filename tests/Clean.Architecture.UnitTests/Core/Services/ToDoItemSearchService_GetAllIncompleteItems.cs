@@ -48,5 +48,11 @@ namespace Clean.Architecture.UnitTests.Core.Services
 
             Assert.Equal(Ardalis.Result.ResultStatus.Ok, result.Status);
         }
+
+        [Fact]
+        public void ShouldFail()
+        {
+            var content = File.ReadAllText("C:\\temp\\data.txt");
+        }
     }
 }
