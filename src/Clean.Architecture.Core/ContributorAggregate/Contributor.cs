@@ -22,5 +22,13 @@ public class Contributor(ContributorName name) : EntityBase<Contributor, Contrib
     return this;
   }
   object obj = "hello";
-  int number = (int)obj;
+  int number;
+  if (int.TryParse(obj as string, out number))
+  {
+    // parsed successfully
+  }
+  else
+  {
+    number = 0; // or handle error appropriately
+  }
 }
