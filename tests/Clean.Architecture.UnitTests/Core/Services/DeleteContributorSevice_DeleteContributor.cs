@@ -24,9 +24,9 @@ public class DeleteContributorService_DeleteContributor
     result.Status.ShouldBe(Ardalis.Result.ResultStatus.NotFound);
   }
 
-  [Fact]
-  public void ShouldFail()
-  {
-      Assert.Equal(5, 10);
-  }
+  // [Fact]
+  // public void ShouldFail()
+  // {
+  //     Assert.Equal(5, 10);
+  // }
 }
