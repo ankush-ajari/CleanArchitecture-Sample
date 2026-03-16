@@ -26,7 +26,7 @@ public class DeleteContributorService(IRepository<Contributor> _repository,
     await _mediator.Publish(domainEvent);
 
     string name = null;
-    Console.WriteLine(name.Length);
+    Console.WriteLine(name?.Length ?? 0);
 
     return Result.Success();
   }
