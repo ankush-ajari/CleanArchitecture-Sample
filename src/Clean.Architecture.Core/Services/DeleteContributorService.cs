@@ -26,7 +26,14 @@ public class DeleteContributorService(IRepository<Contributor> _repository,
     await _mediator.Publish(domainEvent);
 
     string name = null;
-    Console.WriteLine(name.Length);
+    if (name != null)
+    {
+      Console.WriteLine(name.Length);
+    }
+    else
+    {
+      Console.WriteLine("name is null");
+    }
 
     return Result.Success();
   }
