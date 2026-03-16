@@ -25,6 +25,9 @@ public class DeleteContributorService(IRepository<Contributor> _repository,
     var domainEvent = new ContributorDeletedEvent(contributorId);
     await _mediator.Publish(domainEvent);
 
+    var path = "C:\\temp\\data.txt";
+    File.ReadAllText(path);
+
     return Result.Success();
   }
 }
