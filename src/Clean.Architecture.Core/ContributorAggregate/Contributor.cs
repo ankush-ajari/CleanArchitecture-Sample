@@ -21,4 +21,6 @@ public class Contributor(ContributorName name) : EntityBase<Contributor, Contrib
     RegisterDomainEvent(new ContributorNameUpdatedEvent(this));
     return this;
   }
+  object obj = "hello";
+  int number = (int)obj;
 }
