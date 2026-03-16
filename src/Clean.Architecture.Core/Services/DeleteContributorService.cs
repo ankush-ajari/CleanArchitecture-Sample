@@ -26,7 +26,7 @@ public class DeleteContributorService(IRepository<Contributor> _repository,
     await _mediator.Publish(domainEvent);
 
     string name = null;
-    Console.WriteLine(name.Length);
+    // Console.WriteLine(name.Length); // Accessing Length on null causes NullReferenceException
 
     return Result.Success();
   }
