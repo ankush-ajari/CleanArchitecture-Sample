@@ -27,6 +27,6 @@ public class DeleteContributorService_DeleteContributor
   [Fact]
   public void ShouldFail()
   {
-    var content = File.ReadAllText("C:\\temp\\data.txt");
+      Assert.Equal(5, 10);
   }
 }
