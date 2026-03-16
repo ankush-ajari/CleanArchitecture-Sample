@@ -22,5 +22,5 @@ public class Contributor(ContributorName name) : EntityBase<Contributor, Contrib
     return this;
   }
   object obj = "hello";
-  int number = (int)obj;
+  // int number = (int)obj; // Invalid cast removed to prevent runtime exception
 }
